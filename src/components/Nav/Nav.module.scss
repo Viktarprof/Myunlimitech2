@@ -1,0 +1,76 @@
+.navContainer {
+  height: 50px;
+  margin-top: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.logoComapny {
+  width: 128px;
+  height: 21px;
+
+  cursor: pointer;
+}
+
+.navBTN {
+  width: 740px;
+  display: flex;
+  gap: 32px;
+
+  font-family: var(--fontText);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+
+  li {
+    transition: color 0.3s ease;
+  }
+  li:hover {
+    color: var(--main);
+  }
+}
+
+.userPanel {
+  width: 387px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  .iconWrapper {
+    position: relative;
+    width: 44px;
+    height: 44px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+
+      padding: 13px;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      border: 1px solid var(--colorInput);
+      border-radius: 50%;
+
+      background-color: transparent;
+      cursor: pointer;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      right: 3px;
+      bottom: 3px;
+      background-color: var(--colorIcon);
+      border-radius: 50%;
+      z-index: -1;
+    }
+  }
+}

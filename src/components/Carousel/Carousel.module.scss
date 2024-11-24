@@ -1,0 +1,13 @@
+.sliderContainer {
+  width: 1300px;
+  height: 500px;
+  margin-top: 61px;
+  overflow: hidden;
+  border-radius: 25px;
+
+  img {
+    width: 1300px;
+    height: 500px;
+    object-fit: cover;
+  }
+}

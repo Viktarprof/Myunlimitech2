@@ -1,0 +1,59 @@
+.discountContainer {
+  width: 1293px;
+  height: 160px;
+  border-radius: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  background-color: var(--main);
+
+  color: var(--white_text);
+  font-family: var(--fontText);
+  margin-bottom: 40px;
+}
+.newsLeter {
+  display: flex;
+  align-items: center;
+
+  .leterImg {
+    width: 160px;
+    height: 160px;
+    background-image: url(../../media//letterLine.png);
+    background-position: center;
+    background-size: contain;
+  }
+  .textLeter {
+    width: 552px;
+
+    h2 {
+      width: 625px;
+      height: 30px;
+      font-size: 24px;
+      font-weight: 800;
+    }
+    p {
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 18px;
+    }
+  }
+}
+
+.inputEmailContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%; /* Настроить ширину контейнера */
+  }
+
+.akceptRuls {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+.containerAccept{
+    display: flex;
+}

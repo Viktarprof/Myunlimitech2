@@ -1,0 +1,9 @@
+.selectContaier {
+  border: none;
+  font-family: var(--fontText);
+  font-size: 16px;
+  
+  &:hover {
+    color: var(--main);
+  }
+}

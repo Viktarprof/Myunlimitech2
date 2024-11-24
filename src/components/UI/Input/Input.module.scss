@@ -1,0 +1,78 @@
+.inputContainer {
+  position: relative;
+}
+
+.navInput {
+  width: 225px;
+  height: 44px;
+
+  padding: 14px 20px;
+  border: 1px solid var(--colorInput);
+  border-radius: 80px;
+
+  font-family: var(--fontText);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  right: 3px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  background-color: var(--colorIcon);
+
+  border-radius: 50%;
+  padding: 11px;
+
+  cursor: pointer;
+}
+
+.inputEmail {
+  width: 340px;
+  height: 48px;
+
+  padding: 14px 21px;
+  margin-bottom: 10px;
+
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0);
+
+  font-size: 16px;
+}
+
+.inputCheckBox {
+  width: 16px;
+  height: 16px;
+
+  background-color: var(--white_text);
+  margin-right: 10px;
+
+  border-radius: 4px;
+
+  appearance: none;
+  position: relative;
+
+  &:checked {
+    background-color: var(--main);
+  }
+  
+  &:checked::after {
+    content: "✔";
+    width: 12px;
+    height: 12px;
+
+    position: absolute;
+    text-align: center;
+
+    color: var(--white_text);
+
+    border: solid var(--white_text);
+    border-radius: 4px;
+  }
+}
